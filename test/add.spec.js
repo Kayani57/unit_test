@@ -1,6 +1,6 @@
 import { expect } from "chai";
 import { describe,it } from "mocha";
-import { cleanObject,removeInactiveRoles} from "../src/add.js";
+import { cleanObject,removeInactiveRoles,calculateFactorial,calculateTotalPrice} from "../src/add.js";
 
 describe("#cleanObject",()=>{
     context("cleanObject()",()=>{
@@ -92,8 +92,23 @@ describe("#removeInactive",()=>{
 })
 
 
-// describe("#calculateTotalprice()")
+describe("#calculateTotalprice()",()=>
+{
+    it("should return 0 when no items in cart",()=>{
+        const cart = []
+        const result = calculateTotalPrice(cart)
+        expect(result).to.equal(0)
+        })
+    })
 
+
+    describe("#calculateFactorial",()=>{
+        it("should return 1 when input is 0",()=>{
+            const result = calculateFactorial(0)
+            expect(result).to.equal(1)
+            })
+            
+    })
 
 
 
