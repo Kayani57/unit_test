@@ -1,0 +1,19 @@
+{
+  "name": "05",
+  "version": "1.0.0",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha test/**/*.spec.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "chai": "^5.1.1",
+    "lodash": "^4.17.21",
+    "mocha": "^10.7.0",
+    "nyc": "^17.0.0"
+  }
+}
