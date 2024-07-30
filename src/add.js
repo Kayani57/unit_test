@@ -52,3 +52,18 @@ export function calculateTotalPrice(items, discount = 0) {
   const discountedTotal = total * (1 - discount / 100);
   return Number(discountedTotal.toFixed(2));
 }
+
+
+
+// factorial.js
+ export function calculateFactorial(n) {
+  if (n < 0) {
+      throw new Error("Negative numbers are not allowed");
+  }
+  if (n === 0 || n === 1) {
+      return 1;
+  }
+  return n * calculateFactorial(n - 1);
+}
+
+module.exports = calculateFactorial;
